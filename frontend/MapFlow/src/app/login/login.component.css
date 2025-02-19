@@ -1,0 +1,76 @@
+/* Ajoute un fond de login stylisé */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/assets/5.PNG') no-repeat center center/cover;
+  }
+  
+  /* Boîte de login avec effet flou */
+  .login-box {
+    width: 350px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Avatar */
+  .avatar img {
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+  }
+  
+  /* Champs de saisie */
+  .input-container {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .input-container label {
+    display: block;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
+  
+  .input-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Message d'erreur */
+  .error {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Bouton */
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background: #95a5a6;
+  }
+  
