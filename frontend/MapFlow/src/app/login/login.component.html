@@ -1,28 +1,39 @@
-<div class="login-container">
-    <div class="login-box">
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Login Form | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
       <div class="avatar">
-        <img src="assets/user-profile.png" alt="User Avatar">
+        <img src="assets/user-profile.jpg" alt="User Avatar">
       </div>
       <h2>Login</h2>
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <div class="input-container">
-          <label for="username">Username</label>
-          <input id="username" type="text" formControlName="username" placeholder="Enter username" required />
-          <div class="error" *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched">
-            Username is required.
-          </div>
-        </div>
-  
-        <div class="input-container">
-          <label for="password">Password</label>
-          <input id="password" type="password" formControlName="password" placeholder="Enter password" required />
-          <div class="error" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-            Password is required.
-          </div>
-        </div>
-  
-        <button type="submit" [disabled]="loginForm.invalid">Login</button>
-      </form>
-    </div>
+        <div class="input-field">
+        <input type="text" required>
+        <label>Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required>
+        <label>Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
   </div>
-  
+</body>
+</html>
